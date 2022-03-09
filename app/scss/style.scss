@@ -4,6 +4,78 @@
 @import 'libs';
 @import 'global';
 
+.header {
+  min-height: 136px;
+}
+
+
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 46px 0;
+  &__menu {
+    margin: 0 auto 0 70px;
+  }
+
+  &__menu-list {
+     display: flex;
+  }
+
+  .header-top__list-item + .header-top__list-item {
+    margin-left: 40px;
+  }
+
+  &__list-link {
+    @extend %link;
+    transition: all 0.4s;
+    &:hover{
+      color: $red-cl;
+    }
+  }
+
+  &__user-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-link {}
+
+  &__sign-in {
+    display: block;
+    @extend %rb-500;
+    color: $title-cl;
+    font-size: 16px;
+    line-height: 19px;
+     transition: all 0.4s;
+      &:hover {
+       color: $red-cl;
+     }
+  }
+  &__sign-up{
+    display: inline-block;
+    color: $red-cl;
+    border: 1px solid $red-cl;
+    border-radius: 50px;
+    padding: 13px 30px;
+     @extend %rb-500;
+     font-size: 16px;
+     line-height: 19px;
+     margin-left: 31px;
+      transition: all 0.4s;
+       &:hover {
+         color: #fff;
+         background-color: $red-cl;
+       }
+  }
+
+}
+
+.logo {
+
+  &__img {}
+}
 
 
 @import 'media';

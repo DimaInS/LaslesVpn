@@ -4,7 +4,10 @@ body{
 }
 
 body{
- 
+  @extend %rb-400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $body-cl;
   display: flex;
   flex-direction: column;
 }
@@ -14,9 +17,16 @@ body{
 }
 
 .container{
-  max-width: 1800px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title{
+  @extend %rb-500;
+  color: $title-cl;
+  font-size: 35px;
+  line-height: 45px;
 }
 
 
