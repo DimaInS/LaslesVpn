@@ -29,6 +29,33 @@ body{
   line-height: 45px;
 }
 
+.button {
+  display: inline-block;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: $red-cl;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(245, 56, 56, 0.35);
+  padding: 17px 5px;
+  @extend %rb-700;
+  font-size: 16px;
+  line-height: 25px;
+  position: relative;
+  &::before{
+    content: '';
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(54px);
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    left: 18px;
+    width: 212px;
+    height: 25px;
+  }
+}
+
 
 
 
