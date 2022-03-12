@@ -1,4 +1,12 @@
 $(function() {
+
+  $('.burger-menu').on('click', function(){
+    $('.header-top__menu').toggleClass('header-top__menu--active')
+  });
+  $('.header-top__list-link').on('click', function(){
+    $('.header-top__menu').removeClass('header-top__menu--active')
+  });
+
   $('.reviews__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
