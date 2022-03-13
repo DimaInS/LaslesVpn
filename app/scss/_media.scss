@@ -139,7 +139,7 @@
       text-align: center;
     }
     &__logo{
-      margin: 0 auto -25px;
+      margin: 0 auto 25px;
       width: 149px;
     }
     &__social{
@@ -227,7 +227,7 @@
 }
 @media (max-width: 768px){
   .header{
-    min-height: 90px;
+    min-height: 125px;
   }
   .header-top{
     padding: 20px 0;
