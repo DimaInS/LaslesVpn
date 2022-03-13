@@ -15,6 +15,6 @@ $(function() {
     dots: true,
     appendArrows: $('.reviws__arrows'),
     appendDots: $('.reviws__dots'),
-  
+     
   });
 });
