@@ -132,6 +132,71 @@
     }
     
   }
+  .footer{
+    padding: 170px 0 10px;
+    &__about{
+      margin: 0 auto 25px;
+      text-align: center;
+    }
+    &__logo{
+      margin: 0 auto -25px;
+      width: 149px;
+    }
+    &__social{
+      justify-content: center;
+      padding-top: 5px;
+    }
+    &__links{
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+    &__links-list{
+      display: none;
+      text-align: center;
+      /*сворачивает список под заголовком. разворачиваем смотри js*/
+    }
+    &__links-title{
+      pointer-events: auto;
+      /*Восстанавливает функциональность элемента по умолчанию. тут применяется для того чтобі включить возможность разворачивать список*/
+      cursor: pointer;
+      display: inline-block;
+      
+      position: relative;
+      &::after,
+      &::before{
+        content: '';
+        background-color: $body-cl;
+        position: absolute;
+        top: 11px;
+        width: 2px;
+        height: 10px;
+        
+      }
+      &::after{
+        transform: rotateZ(-40deg);
+        right: -18px;
+      }
+      &::before {
+        transform: rotateZ(40deg);
+        right:  -24px;
+      }
+    }
+    .footer__links-title.active{
+      
+      &::after {
+        transform: rotateZ(40deg);
+        
+      }
+
+      &::before {
+        transform: rotateZ(-40deg);
+        
+      }
+    }
+  }
 }
 
 @media (max-width: 991px){

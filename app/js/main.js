@@ -1,5 +1,11 @@
 $(function() {
 
+  
+   $('.footer__links-title').on('click', function(){ //сворачивает список под заголовком
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+  });
+
   $('.burger-menu').on('click', function(){
     $('.header-top__menu').toggleClass('header-top__menu--active')
   });
